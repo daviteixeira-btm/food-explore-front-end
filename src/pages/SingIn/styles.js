@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.main`
@@ -8,7 +9,7 @@ export const Container = styled.main`
     padding: 0 5.6rem;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     max-width: ${DEVICE_BREAKPOINTS.TABLET};
 
     @media(min-width: ${DEVICE_BREAKPOINTS.LAPTOP}){

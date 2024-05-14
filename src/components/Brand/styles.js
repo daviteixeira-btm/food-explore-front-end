@@ -5,7 +5,6 @@ export const Container = styled.div`
     gap: 1.1rem;
     display: flex;
     align-items: center;
-    margin-bottom: 7.3rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
     > span {
@@ -17,7 +16,7 @@ export const Container = styled.div`
 
     @media(min-width: ${DEVICE_BREAKPOINTS.LAPTOP}){
         > span {
-            font-size: 4.2rem;
+            font-size: 2.8rem;
             line-height: 4.9rem;
         }
     }

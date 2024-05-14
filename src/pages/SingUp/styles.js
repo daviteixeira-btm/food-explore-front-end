@@ -1,23 +1,23 @@
 import styled from "styled-components";
+
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.main`
-    height: auto;
+    height: 130vh;
     display: flex;
     margin: 0 auto;
+    padding: 0 5.6rem;
     align-items: center;
-    padding: 10rem 5.6rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     max-width: ${DEVICE_BREAKPOINTS.TABLET};
 
     @media(min-width: ${DEVICE_BREAKPOINTS.LAPTOP}){
+        height: 100vh;
         max-width: 100%;
-        padding: 5.6rem;
         flex-direction: row;
         justify-content: space-around;
     }
-
 `;
 
 export const Form = styled.form`
@@ -47,8 +47,8 @@ export const Form = styled.form`
     }
 
     @media(min-width: ${DEVICE_BREAKPOINTS.LAPTOP}){
-        padding: 6.4rem;
         max-width: 47.6rem;
+        padding: 3rem 5.4rem;
         border-radius: 1.6rem;
         background-color: ${({ theme }) => theme.COLORS.DARK_700};
 
