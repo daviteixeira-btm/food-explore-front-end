@@ -1,8 +1,10 @@
-import { List, Receipt } from "@phosphor-icons/react";
+import { List, Receipt, SignOut } from "@phosphor-icons/react";
 
 import { Container, Menu } from "./styles";
 
 import { Brand } from "../Brand";
+import { Input } from "../Input";
+import { Button } from "../Button";
 
 export function Header({ onOpenMenu }){
     return(
@@ -13,10 +15,16 @@ export function Header({ onOpenMenu }){
             </Menu>
 
             <Brand />
+
+            <Input
+                type="text"
+                placeholder="Busque por pratos ou ingredientes"
+            />
             
-            <Menu>
-                <Receipt />
-            </Menu>
+            <Button icon={<Receipt />} title="Pedidos (0)" />
+
+            <Button icon={<SignOut />} />
+            
         </Container>
     );
 }

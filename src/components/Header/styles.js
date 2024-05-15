@@ -11,8 +11,58 @@ export const Container = styled.header`
     justify-content: space-between;
     background-color: ${({ theme }) => theme.COLORS.DARK_700};
 
+    > div {
+        display: none;
+    }
+
+    > button:nth-child(4), > button:nth-child(5) {
+        display: none;
+    }
+
     @media(min-width: ${DEVICE_BREAKPOINTS.LAPTOP}){
-        padding: 3.7rem 12.3rem;
+        padding: 0;
+        align-items: center;
+        justify-content: space-around;
+
+        div {
+            margin: 0;
+            width: auto;
+            display: flex;
+
+            > label {
+                display: none;
+            }
+
+            > span {
+                font-size: 2rem;
+            }
+        }
+
+        input {
+            gap: 0;
+            margin: 0;
+            width: 58.1rem;
+            align-self: center;
+        }
+
+        button:nth-child(4) {
+            margin: 0;
+            display: flex;
+            width: 21.6rem;
+        }
+
+        button:nth-child(5) {
+            margin: 0;
+            padding: 0;
+            width: 5rem;
+            display: flex;
+            background: transparent;
+            
+            > svg {
+                font-size: 2rem;
+                color: ${({ theme }) => theme.COLORS.LIGHT_100};
+            }
+        }
     }
 `;
 
