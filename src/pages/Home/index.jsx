@@ -6,6 +6,8 @@ import { Header } from "../../components/Header";
 
 import { SideMenu } from "../../components/SideMenu";
 
+import { Footer } from "../../components/Footer";
+
 export function Home(){
 
     const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -18,6 +20,8 @@ export function Home(){
                 menuIsOpen={menuIsOpen}
                 onCloseMenu={() => setMenuIsOpen(false)}
             />
+
+            <Footer />
         </Container>       
     );
 }

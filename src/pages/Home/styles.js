@@ -7,9 +7,10 @@ export const Container = styled.main`
     display: grid;
     align-items: center;
     grid-template-columns: auto;  
-    grid-template-rows: 11.4rem auto;
+    grid-template-rows: 11.4rem auto 7.7rem;
     
     grid-template-areas: 
     "header"
-    "content";
+    "content"
+    "footer";
 `;
