@@ -11,11 +11,27 @@ export const Container = styled.header`
     justify-content: space-between;
     background-color: ${({ theme }) => theme.COLORS.DARK_700};
 
-    > div {
+    > div:nth-child(3) {
         display: none;
     }
 
-    > button:nth-child(4), > button:nth-child(5) {
+    > button:nth-child(4) {
+        display: none;
+    }
+
+    > button:nth-child(5) {
+        margin: 0;
+        padding: 0;
+        width: 3rem;
+        height: 3rem;
+        background: none;
+
+        > svg {
+            font-size: 3rem;
+        }
+    }
+
+    > button:nth-child(6) {
         display: none;
     }
 
@@ -38,9 +54,10 @@ export const Container = styled.header`
             }
         }
 
-        input {
+        > div:nth-child(3) {
             gap: 0;
             margin: 0;
+            display: flex;
             width: 58.1rem;
             align-self: center;
         }
@@ -51,7 +68,11 @@ export const Container = styled.header`
             width: 21.6rem;
         }
 
-        button:nth-child(5) {
+        button:nth-child(5){
+            display: none;
+        }
+
+        button:nth-child(6) {
             margin: 0;
             padding: 0;
             width: 5rem;

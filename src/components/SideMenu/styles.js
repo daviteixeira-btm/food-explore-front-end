@@ -6,7 +6,16 @@ export const Container = styled.aside`
     z-index: 1;
     width: 100%;
     height: 100vh;
-    display: flex;
+
+    display: grid;
+    grid-template-columns: auto;  
+    grid-template-rows: 11.4rem auto 7.7rem;
+    
+    grid-template-areas: 
+    "header"
+    "menu"
+    "footer";
+
     position: absolute;
     flex-direction: column;
     transform: translateX(-100%);
@@ -27,6 +36,7 @@ export const Header = styled.header`
     gap: 0.5rem;
     display: flex;
     height: 11.4rem;
+    grid-area: header;
     align-items: center;
     padding: 5.6rem 2.4rem 2.8rem;
     background-color: ${({ theme }) => theme.COLORS.DARK_700};
@@ -55,6 +65,8 @@ export const Button = styled.button`
 
 export const Nav = styled.nav`
     padding: 1rem;
+    grid-area: menu;
+    align-items: baseline;
     margin: 3.6rem 2.8rem;
     border-bottom: 1px solid #192227;
 
@@ -66,4 +78,4 @@ export const Nav = styled.nav`
             }
         }
     }
-`; 
+`;

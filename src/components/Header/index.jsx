@@ -23,6 +23,8 @@ export function Header({ onOpenMenu }){
             
             <Button icon={<Receipt />} title="Pedidos (0)" />
 
+            <Button icon={<Receipt />} />
+
             <Button icon={<SignOut />} />
             
         </Container>

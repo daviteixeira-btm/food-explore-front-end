@@ -3,6 +3,7 @@ import { X } from "@phosphor-icons/react";
 import { Container, Header, Button, Nav } from "./styles";
 
 import { Input } from "../Input";
+import { Footer } from "../Footer";
 
 export function SideMenu({ menuIsOpen, onCloseMenu }){
     return(
@@ -32,6 +33,8 @@ export function SideMenu({ menuIsOpen, onCloseMenu }){
                     </li>
                 </ul>
             </Nav>
+
+            <Footer />
         </Container>
     );
 }
