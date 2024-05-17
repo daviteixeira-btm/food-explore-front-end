@@ -1,12 +1,13 @@
 import { useState } from "react";
 
-import { Container } from "./styles";
+import { Container, Section } from "./styles";
 
 import { Header } from "../../components/Header";
 
 import { SideMenu } from "../../components/SideMenu";
 
 import { Footer } from "../../components/Footer";
+import { TopBanner } from "../../components/TopBanner";
 
 export function Home(){
 
@@ -20,6 +21,10 @@ export function Home(){
                 menuIsOpen={menuIsOpen}
                 onCloseMenu={() => setMenuIsOpen(false)}
             />
+
+            <Section>
+                <TopBanner />
+            </Section>
 
             <Footer />
         </Container>       
