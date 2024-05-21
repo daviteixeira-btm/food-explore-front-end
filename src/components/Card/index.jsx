@@ -10,17 +10,22 @@ export function Card(){
     return(
         <Container className="keen-slider__slide number-slide1">
             <Dish src={saladaRavanello} />
-            
-            <h3>Salada Ravanello</h3>
+
+            <h3>Salada Ravanello &gt;</h3>
+
+            <p>Rabanetes, folhas verdes e mollho agridoce salpicados com gergilim</p>
+
             <h4>R$ 49,97</h4>
             
             <Options>
-                <Button icon={<Minus />} />
-                <span>01</span>
-                <Button icon={<Plus />} />
+                <div>
+                    <Button icon={<Minus />} />
+                    <span>01</span>
+                    <Button icon={<Plus />} />
+                </div>
+                <Button title="incluir" />
             </Options>
             
-            <Button title="incluir" />
             <Button icon={<HeartStraight />} />
         </Container>
     );
