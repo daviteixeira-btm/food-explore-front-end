@@ -8,6 +8,7 @@ import { SideMenu } from "../../components/SideMenu";
 
 import { Footer } from "../../components/Footer";
 import { TopBanner } from "../../components/TopBanner";
+import { Slider } from "../../components/Slider";
 
 export function Home(){
 
@@ -24,6 +25,11 @@ export function Home(){
 
             <Section>
                 <TopBanner />
+            </Section>
+
+            <Section>
+                <h2>Refeições</h2>
+                <Slider />
             </Section>
 
             <Footer />
