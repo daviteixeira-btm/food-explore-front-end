@@ -32,6 +32,11 @@ export function Home(){
                 <Slider />
             </Section>
 
+            <Section>
+                <h2>Pratos principais</h2>
+                <Slider />
+            </Section>
+
             <Footer />
         </Container>       
     );

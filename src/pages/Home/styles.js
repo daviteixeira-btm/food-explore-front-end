@@ -8,10 +8,11 @@ export const Container = styled.main`
     display: grid;
     align-items: center;
     grid-template-columns: auto;  
-    grid-template-rows: 11.4rem auto auto 7.7rem;
+    grid-template-rows: 11.4rem auto auto auto 7.7rem;
     
     grid-template-areas: 
     "header"
+    "content"
     "content"
     "content"
     "footer";
