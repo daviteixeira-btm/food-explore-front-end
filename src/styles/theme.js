@@ -1,5 +1,6 @@
 export default {
     COLORS: {
+        DARK_100: "#192227",
         DARK_200: "#00070A",
         DARK_300: "#000204",
         DARK_400: "#000A0F",

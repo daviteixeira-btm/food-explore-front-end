@@ -5,6 +5,7 @@ import { SingIn } from "./pages/SingIn";
 import { SingUp } from "./pages/SingUp";
 
 import { Home } from "./pages/Home";
+import { DishView } from "./pages/DishView";
 
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/global";
@@ -14,7 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <ThemeProvider theme={theme}>
             <GlobalStyles />
-            <Home />
+            <DishView />
         </ThemeProvider>
     </React.StrictMode>
 );
