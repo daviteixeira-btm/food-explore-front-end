@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container, Section } from "./styles";
+import { Container, Content, Section } from "./styles";
 
 import { Header } from "../../components/Header";
 
@@ -18,24 +18,26 @@ export function Home(){
         <Container>
             <Header onOpenMenu={() => setMenuIsOpen(true)} />
 
-            <SideMenu
-                menuIsOpen={menuIsOpen}
-                onCloseMenu={() => setMenuIsOpen(false)}
-            />
+            <main>
+                <SideMenu
+                    menuIsOpen={menuIsOpen}
+                    onCloseMenu={() => setMenuIsOpen(false)}
+                />
+                    
+                <Section>
+                    <TopBanner />
+                </Section>
 
-            <Section>
-                <TopBanner />
-            </Section>
+                <Section>
+                    <h2>Refeições</h2>
+                    <Slider />
+                </Section>
 
-            <Section>
-                <h2>Refeições</h2>
-                <Slider />
-            </Section>
-
-            <Section>
-                <h2>Pratos principais</h2>
-                <Slider />
-            </Section>
+                <Section>
+                    <h2>Pratos principais</h2>
+                    <Slider />
+                </Section>
+            </main>
 
             <Footer />
         </Container>       
