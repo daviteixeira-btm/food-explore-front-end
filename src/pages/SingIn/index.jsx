@@ -3,6 +3,7 @@ import { Container, Form } from "./styles";
 import { Brand } from "../../components/Brand";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
 
 export function SingIn() {
     return (
@@ -28,9 +29,7 @@ export function SingIn() {
 
                 <Button title="Entrar" />
 
-                <a href="#">
-                    Criar uma conta
-                </a>
+                <ButtonText title={"Criar uma conta"}/>
 
             </Form>
         </Container>

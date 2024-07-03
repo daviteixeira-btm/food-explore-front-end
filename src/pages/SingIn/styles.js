@@ -37,15 +37,6 @@ export const Form = styled.form`
         color: ${({ theme }) => theme.COLORS.LIGHT_300};
     }
 
-    > a {
-        font-weight: 500;
-        font-size: 1.4rem;
-        margin-top: 3.2rem;
-        font-style: normal;
-        line-height: 2.4rem;
-        color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    }
-
     @media(min-width: ${DEVICE_BREAKPOINTS.LAPTOP}){
         padding: 6.4rem;
         max-width: 47.6rem;

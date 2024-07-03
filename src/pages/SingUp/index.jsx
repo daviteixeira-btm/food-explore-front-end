@@ -3,6 +3,7 @@ import { Container, Form } from "./styles";
 import { Brand } from "../../components/Brand";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
 
 export function SingUp() {
     return (
@@ -34,9 +35,7 @@ export function SingUp() {
 
                 <Button title="Criar conta" />
 
-                <a href="#">
-                    Já tenho uma conta
-                </a>
+                <ButtonText title={"Já tenho uma conta"} />
 
             </Form>
         </Container>

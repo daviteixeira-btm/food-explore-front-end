@@ -1,14 +1,15 @@
 import { useState } from "react";
 
-import { Container, Content, Section } from "./styles";
+import { Container } from "./styles";
 
 import { Header } from "../../components/Header";
 
 import { SideMenu } from "../../components/SideMenu";
 
-import { Footer } from "../../components/Footer";
 import { TopBanner } from "../../components/TopBanner";
+import { Section } from "../../components/Section";
 import { Slider } from "../../components/Slider";
+import { Footer } from "../../components/Footer";
 
 export function Home(){
 
@@ -28,13 +29,11 @@ export function Home(){
                     <TopBanner />
                 </Section>
 
-                <Section>
-                    <h2>Refeições</h2>
+                <Section title={"Refeições"}>
                     <Slider />
                 </Section>
 
-                <Section>
-                    <h2>Pratos principais</h2>
+                <Section title={"Pratos principais"}>
                     <Slider />
                 </Section>
             </main>
